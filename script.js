@@ -33,13 +33,13 @@ function BindItem(arr){
         <div class="card">
         
         <div class="card-body">
-            <h2 class="card-text">Title : ${e.title}</h2>
+            <h2 class="card-text" style="text-align:center">Title : ${e.title}</h2>
             <h4 class="card-title">Id : ${e.id}</h4>
-            <p class="card-text">Price : ${e.price}</p>
+            <p class="card-text"><strong>Price :</strong> ${e.price} Rs.</p>
             <div class="img"><img src="${e.image}" alt="No Image" /></div>
-            <p class="card-text">Description : ${e.discription}</p>
+            <p class="card-text"><strong>Description :</strong> ${e.discription}</p>
 
-             <button class="btn btn-info">Add to Cart</button>
+             <button class="btn btn-info" onclick="cart()">Add to Cart</button>
         </div>
     </div>
     </div>`
@@ -49,3 +49,7 @@ function BindItem(arr){
 
 document.querySelector(".post").innerHTML=temp;
 }
+
+function cart() {
+    
+ }
